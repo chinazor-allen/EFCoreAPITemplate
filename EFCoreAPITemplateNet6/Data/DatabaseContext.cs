@@ -15,6 +15,5 @@ public class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<CiMaster>().HasKey(e => new { e.UNIT, e.WELL_ACTIVITY, e.ORGINAZATION, e.ASSET, e.SOURCETYPE });
     }
 }
